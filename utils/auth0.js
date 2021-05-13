@@ -6,10 +6,7 @@ const auth0 = initAuth0({
   baseURL: process.env.AUTH0_BASE_URL,
   clientID: process.env.AUTH0_CLIENT_ID,
   clientSecret: process.env.AUTH0_CLIENT_SECRET,
-  // audience: process.env.AUTH0_AUDIENCE,
-  // session: {
-  //   storeAccessToken: true,
-  // },
+  audience: process.env.AUTH0_AUDIENCE,
 });
 
 export default auth0;
