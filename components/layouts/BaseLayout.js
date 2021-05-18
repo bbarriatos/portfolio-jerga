@@ -1,5 +1,6 @@
 import Header from '@/components/shared/Header';
 import { useUser } from '@auth0/nextjs-auth0';
+import { ToastContainer } from 'react-toastify';
 
 const BaseLayout = (props) => {
   const { user, error, isLoading } = useUser();
@@ -14,6 +15,7 @@ const BaseLayout = (props) => {
       <main className={`cover ${className}`}>
         <div className="wrapper">{children}</div>
       </main>
+      <ToastContainer />
     </div>
   );
 };
