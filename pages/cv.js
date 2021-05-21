@@ -10,7 +10,7 @@ const Cv = () => {
   return (
     <>
       <BaseLayout user={user} loading={isLoading}>
-        <BasePage>
+        <BasePage title="My Experiences - Filip Jerga">
           <Row>
             <Col md={{ size: 8, offset: 2 }}>
               <iframe

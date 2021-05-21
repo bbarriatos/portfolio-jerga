@@ -29,7 +29,11 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
   return (
     <>
       <BaseLayout user={user} loading={isLoading}>
-        <BasePage header="Portfolios" className="portfolio-page">
+        <BasePage
+          title="Newest Portfolios - Filip Jerga"
+          header="Portfolios"
+          className="portfolio-page"
+        >
           <Row>
             {portfolios.map((portfolio) => (
               <Col
